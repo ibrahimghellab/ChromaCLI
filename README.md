@@ -1,51 +1,64 @@
-# Fichier README du projet Comparaison d'approches algorithmiques --- Général --- Version: 0.1 (2024-01-12)
+# 📷 Comparaison d'approches algorithmiques  
 
-  Ce projet a pour but de réaliser un prototype d'application, qui va pouvoir effectuer certaines modifications sur des images selon la demande des utilisateurs.
+## 📝 Général  
 
-## Table des Matières
+- **Version** : 0.1 (2024-01-12)  
+- **Description** : Ce projet est un prototype d'application permettant d'effectuer diverses modifications sur des images selon la demande des utilisateurs.  
 
-- [Lancement de l'application]
-- [Fonctionnalités et leurs utilisations]
+## 📌 Table des matières  
 
-## Lancement de l'application
+- [Lancement de l'application](#🚀-lancement-de-lapplication)  
+- [Fonctionnalités et utilisation](#✨-fonctionnalités-et-utilisation)  
 
-Pour lancer notre programme, il faut d'abord s'assurer que notre projet contient nos 3 fichiers qui sont :
+## 🚀 Lancement de l'application  
 
-- main.cpp
-- project_I.cpp
-- project_I.h
+Avant d’exécuter le programme, assurez-vous que le projet contient les fichiers suivants :  
 
-Lorsque vous exécuter le programme, il vous ai demandé "Souhaitez vous ouvrir un fichier ppm ou creer une image par vous meme ? Selectionnez 1 ou 2.". 
-  -Si vous souhaitez effectuer une modification sur une image existante, entrer 1 sinon 2. Si vous avez entré 1, vous devez ensuite entré le nom d'un fichier qui existe en .ppm sinon créer en une avant d'éxécuter le programme.
-  -Par contre, si vous entré 2, vous devez ensuite netrez le nombre de lignes et de colonnes de votre image et créé les composantes rouge, vert et bleu pour finaliser la création de l'image.
-Pour finir le menu s'affiche, il vous suffit donc de saisir le numéro de la modification que vous souhaiter faire.
-Si vous souhaitez mettre fin au programme, entrez le nombre 22.
+- `main.cpp`  
+- `project_I.cpp`  
+- `project_I.h`  
 
+### 📂 Chargement d'une image  
 
-## Fonctionnalités et leurs utilsations 
+Lors de l’exécution, le programme vous demande :  
 
-Liste des fonctionnalités du projet.
+> "Souhaitez-vous ouvrir un fichier PPM ou créer une image par vous-même ? Sélectionnez 1 ou 2."  
 
- -Tapez 1 pour passer l'image en noir et blanc.
- -Tapez 2 pour passer l'image en gris.
- -Tapez 3 pour passer l'image en rouge et noir.
- -Tapez 4 pour baisser la luminosité, puis saisissez un nombre entier entre 0 et 1.
- -Tapez 5 pour augmenter la luminosité, puis saisissez un nombre entier superieur a 1.
- -Tapez 6 pour baisser le contraste selon un facteur entier x.
- -Tapez 7 pour augmenter le contraste selon un facteur entier x.
- -Tapez 8 pour passer l'image en deuteranopie.
- -Tapez 9 pour passer l'image en protanopie.
- -Tapez 10 pour passer l'image en tritanopie.
- -Tapez 11 pour rogner l'image à gauche.
- -Tapez 12 pour rogner l'image à droite.
- -Tapez 13 pour rogner l'image en haut.
- -Tapez 14 pour rogner l'image en bas.
- -Tapez 15 pour la rotation de l'image vers la droite.
- -Tapez 16 pour la rotation de l'image vers la gauche.
- -Tapez 17 pour le retournement horizontal (symétrie d'axe vertical).
- -Tapez 18 pour le retournement vertical (symétrie d'axe horizontal).
- -Tapez 19 pour l'agrandissement de l'image selon un facteur entier x.
- -Tapez 20 pour le rétrécissement de l'image selon un facteur entier x.
- -Tapez 21 pour le flou de l'image, puis saisissez un nombre entier entre 1 et 3 pour appliquer divers effets de flou (G3, Gaussien, contourSobel).
- -Tapez 22 pour mettre fin au programme.
+- **Option 1** : Charger une image existante au format `.ppm`. Vous devrez entrer le nom du fichier existant.  
+- **Option 2** : Créer une nouvelle image. Vous devrez spécifier :  
+  - Le nombre de lignes et de colonnes.  
+  - Les composantes Rouge, Vert et Bleu (RGB) pour générer l’image.  
 
+### 🛠️ Modification de l’image  
+
+Une fois l’image chargée ou créée, un menu s’affiche avec différentes options de modification.  
+Pour terminer le programme, entrez **22**.  
+
+## ✨ Fonctionnalités et utilisation  
+
+Le programme propose les fonctionnalités suivantes :  
+
+| **Numéro** | **Action** |
+|------------|-----------|
+| 1 | Convertir l'image en **noir et blanc**. |
+| 2 | Convertir l'image en **niveaux de gris**. |
+| 3 | Appliquer un effet **rouge et noir**. |
+| 4 | **Diminuer** la luminosité (valeur entre **0 et 1**). |
+| 5 | **Augmenter** la luminosité (valeur **supérieure à 1**). |
+| 6 | **Diminuer** le contraste (facteur entier **x**). |
+| 7 | **Augmenter** le contraste (facteur entier **x**). |
+| 8 | Simuler la **deutéranopie** (daltonisme). |
+| 9 | Simuler la **protanopie** (daltonisme). |
+| 10 | Simuler la **tritanopie** (daltonisme). |
+| 11 | Rogner l'image **à gauche**. |
+| 12 | Rogner l'image **à droite**. |
+| 13 | Rogner l'image **en haut**. |
+| 14 | Rogner l'image **en bas**. |
+| 15 | **Rotation à droite**. |
+| 16 | **Rotation à gauche**. |
+| 17 | **Retournement horizontal** (symétrie verticale). |
+| 18 | **Retournement vertical** (symétrie horizontale). |
+| 19 | **Agrandir** l'image (facteur entier **x**). |
+| 20 | **Réduire** l'image (facteur entier **x**). |
+| 21 | Appliquer un effet de **flou** (valeur entre **1 et 3** : G3, Gaussien, Contour Sobel). |
+| 22 | **Quitter** le programme. |
